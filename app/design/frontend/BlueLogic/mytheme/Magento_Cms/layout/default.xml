@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="search-term-popular-link" remove="false" />
+        <referenceBlock name="sales-guest-form-link" remove="false" />
+
+        
+        
+        <referenceBlock name="footer_links">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="about-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">About Us</argument>
+                    <argument name="path" xsi:type="string">about</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="career-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">career</argument>
+                    <argument name="path" xsi:type="string">career</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="terms-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">terms</argument>
+                    <argument name="path" xsi:type="string">terms</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+        
+    </body>
+</page>
